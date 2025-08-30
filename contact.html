@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Edem Ahiati</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body_change">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+        </div>
+        <div class="loader-text">Loading Portfolio...</div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+    <nav class="nav_bar">
+            <h1 class="myName">Ahiati .</h1>
+            <div class="navtop">
+                <ul class="nav_lists">
+                    <li>
+                        <a href="#" onclick="history.back(); return false;">Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile" onclick="history.back(); return false;">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#projects" onclick="history.back(); return false;">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience" onclick="history.back(); return false;">Experience</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="home_nav">Contact</a>🚀
+                    </li>
+                </ul>
+            </div>
+            <div class="reverse">
+                <a href="#home" onclick="history.back(); return false;" class="home_nav reverse_arrow">⤶</a>
+            </div>
+    </nav>
+    <h2 id="contact_me">Contact Me</h2>
+    <form action="https://formspree.io/f/xandnnje" method="POST">
+        <label for="userDetails">Name: <input type="text" name="name" id="userDetails" placeholder="Name or Company" minlength="4" required></label> 
+        <label for="userDetails2">Email: <input type="email" name="email" placeholder="Email" id="userDetails2" required></label>
+        <label for="usermsg">Message: <textarea id="usermsg" name="message" placeholder="Let's get in touch..." rows="7" cols="25" required></textarea></label>  
+        <button class="send_message" type="submit">Send message ⇾</button>
+    </form>
+    <div class="grid_stretch">
+            <img src="images/grid1.png" class="svg_grid1">
+    </div>
+    <h3 class="education_title"><span class="solo_color">Find</span> Me</h3>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6303.888188203633!2d-0.3945140304639899!3d5.537243615033224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfbbb04dd1ea05%3A0xa80a9e913f869094!2sTreasureland%20School!5e0!3m2!1sen!2sgh!4v1756318447136!5m2!1sen!2sgh" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

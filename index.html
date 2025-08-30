@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional | Edem Ahiati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Myfavicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+        </div>
+        <div class="loader-text">Loading Portfolio...</div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+    
+    <!-- Portfolio Content -->
+    <div class="side_menu" id="side_menu">
+        <button class="cross" id="cross" onclick="terminate()">⛌</button>
+        <h1 class="myname">Ahiati.</h1>
+        <nav class="nav_items">
+            <ul class="navside_lists">
+                    <li>
+                        <a href="index.html" class="home_nav">Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact 🚀</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <div class="grid_stretch">
+        <img src="images/grid1.png" class="svg_grid1">
+    </div>
+    <div id="portfolio-content">
+        
+        <nav class="nav_bar">
+            <h1 class="myName" id="home">Ahiati .</h1>
+            <div class="navtop">
+                <ul class="nav_lists">
+                    <li>
+                        <a href="index.html" class="home_nav">Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact 🚀</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="images/menu.svg" class="collapsible" id="tap" onclick="Start()">
+        </nav>
+
+        
+        <div class="profile">
+            <div class="grid_right">
+                <svg class="border-animation" viewBox="0 0 506 506" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="253" cy="253" r="250" stroke="#00ff99" stroke-width="4" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                stroke-dasharray="5.32717 225.11547 29.74185 27.5299" 
+                                fill="transparent"></circle>
+                </svg>
+                <img src="images/Profilepic.jpeg" class="profile_picture">
+                
+            </div>
+            
+            <div class="grid_left">
+                <p class="status">Software Engineer</p>
+                <h2 class="nameIntro animate__animated animate__pulse animate__repeat-3">Hello World</h2>
+                <span class="nameIntro1">I'm Eddie Edem</span> <span class="nameIntro1">Ahiati</span>
+                <p class="intro_text">Passionate software engineer with expertise in full-stack development, creating innovative solutions, and solving complex problems with elegant code.</p>
+                <a href="CV.docx" download>Download My CV</a>
+                <div class="socials">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://linkedIn.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <h3 class="education_title" data-aos="fade-up">Education</h3>
+        <div class="education">
+            <div class="education_stage" data-aos="fade-up">
+                <p><strong>Master's in Computer Science</strong> - University of Technology (2020-2022)<br>
+                Specialized in Artificial Intelligence and Machine Learning. Published research on neural networks.</p>
+            </div>
+            <div class="education_stage" data-aos="fade-up">
+                <p><strong>Bachelor's in Software Engineering</strong> - Tech Institute (2016-2020)<br>
+                Graduated with honors. President of Computer Science Student Association.</p>
+            </div>
+            <div class="education_stage" data-aos="fade-up">
+                <p><strong>Web Development Bootcamp</strong> - Coding Academy (2019)<br>
+                Intensive 12-week program focusing on modern web technologies and frameworks.</p>
+            </div>
+            
+        </div>
+        <h3 class="short_profile"  id="profile">Brief <span class="solo_color">Profile</span></h3>
+        <div class="profile_container">
+            <div class="container_box box1" data-aos="fade-right">
+                <div class="glass">
+                    <h2 class="glass_text">Java and Spring boot developer who has built systems for e-commerce, real-time auctions, and stock exchanges</h2>
+                </div>
+            </div>
+            <div class="container_box box2" data-aos="fade-down">
+                <div class="glass">
+                    <h2 class="glass_text">Solid foundation in Data Structures and Algorithms, and Design Patterns</h2>
+                </div>
+            </div>
+            <div class="container_box box3" data-aos="fade-up">
+                <p class="stack_text">My current <span class="solo_color">Tech Stack</span> stats 🚀</p>
+                <div class="tech_box">
+                    <div>
+                        <h2 class="tech_stack">Java 89%</h2>
+                        <h2 class="tech_stack">MySQL 90%</h2>
+                    </div>
+                    <div>
+                        <h2 class="tech_stack">Python 82%</h2>
+                        <h2 class="tech_stack">Django 80%</h2>
+                    </div>
+                    <div>
+                        <h2 class="tech_stack">HTML CSS 92%</h2>
+                        <h2 class="tech_stack">Spring Boot 85%</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container_box box4" data-aos="fade-right">
+                <div class="glass">
+                    <h2 class="glass_text1">Software architect designer and AI Specialist</h2>
+                </div>
+            </div>
+            <div class="container_box box5 move">
+                <div class="glass">
+                    <h2 class="glass_text2">Currently building a banking system application for a small cooperate firm</h2>
+                </div>
+            </div>
+            <div class="container_box box6" data-aos="fade-down-right"  data-aos-delay="500">
+                <div class="glass">
+                    <h2 class="glass_text1 text_up">Two years of experience in front-end, machine learning, and mobile app development with 7 real world appliacations currently</h2>
+                </div>
+            </div>
+        </div>
+        <h3 class="projects" id="projects">Recent <span class="solo_color">Projects</span></h3>
+        <div class="projects_container">
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+            <div class="projects_box">
+                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+            </div>
+        </div>
+        <h3 class="experience" id="experience">My <span class="solo_color">Experience</span></h3>
+    <div class="main_flex">
+        <div class="first_box">
+            <div class="inner_flex">
+                <img src="images/svgicon1.svg" class="svgicon">
+                <div class="inner_textbox">
+                    <h3>Hello</h3>
+                    <p class="inner_text">Kindly ignore the unfinished project, for now Lorem😅! Also most of the text in the portfolio are not factual(yet), had to type something meaningful for now. Will eventually complete the portfolio.</p>
+                </div>
+            </div>
+            <div class="inner_flex">
+                <img src="images/svgicon2.svg" class="svgicon">
+                <div class="inner_textbox">
+                    <h3>Hello</h3>
+                    <p class="inner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda, amet voluptate porro mollitia qui error ratione aspernatur. Officiis, suscipit?</p>
+                </div>
+            </div>
+        </div>
+        <div class="second_box">
+            <div class="inner_flex">
+                <img src="images/svgicon3.svg" class="svgicon">
+                <div class="inner_textbox">
+                    <h3>Hello</h3>
+                    <p class="inner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda, amet voluptate porro mollitia qui error ratione aspernatur. Officiis, suscipit?</p>
+                </div>
+            </div>
+            <div class="inner_flex">
+                <img src="images/svgicon4.svg" class="svgicon">
+                <div class="inner_textbox">
+                    <h3>Hello</h3>
+                    <p class="inner_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda, amet voluptate porro mollitia qui error ratione aspernatur. Officiis, suscipit?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div id="journey-container">
+            <h3 class="report" >My journey <span class="solo_color">report</span></h3>
+            <p>My professional journey has been an exciting adventure of continuous learning and growth. From my first line of code to leading development teams, each step has shaped me into the engineer I am today.</p>
+            <div class="timeline_container">
+                <div class="timeline-line">
+                    <div class="timeline-progress" id="timeline-progress"></div>
+                </div>
+                <div class="journey_container">
+                    <div class="journey_box">
+                        <div class="journeyImage_flex">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                        </div>
+                        <div class="bullet_position">
+                            <h2 class="bullet">⦿</h2>
+                            <h3 class="date">2022</h3>
+                            <p class="journey_text"><strong>Started my journey:</strong> Began studying software engineering with a focus on web technologies and algorithms.</p>
+                        </div>
+                    </div>
+                    <div class="journey_box">
+                        <div class="journeyImage_flex">
+                            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                        </div>
+                        <div class="bullet_position">
+                            <h2 class="bullet">⦿</h2>
+                            <h3 class="date">2023</h3>
+                            <p class="journey_text"><strong>First Internship:</strong> Joined TechSolutions Inc. as a front-end developer intern, working on responsive web applications.</p>
+                        </div>    
+                    </div>
+                    <div class="journey_box">
+                        <div class="journeyImage_flex">
+                            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                        </div>
+                        <div class="bullet_position">
+                            <h2 class="bullet">⦿</h2>
+                            <h3 class="date">2024</h3>
+                            <p class="journey_text"><strong>Graduation and First Job:</strong> Graduated with honors and started as a full-stack developer at Digital Innovations Agency.</p>
+                        </div>
+                    </div>
+                    <div class="journey_box">
+                         <div class="journeyImage_flex">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                        </div>
+                        <div class="bullet_position">
+                            <h2 class="bullet">⦿</h2>
+                            <h3 class="date">Early 2025</h3>
+                            <p class="journey_text"><strong>Lead Developer Role:</strong> Promoted to Lead Developer, overseeing a team of 5 engineers on major projects for enterprise clients.</p>
+                        </div>
+                    </div>
+                    <div class="journey_box">
+                        <div class="journeyImage_flex">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="journey_images">
+                        </div>
+                        <div class="bullet_position">
+                            <h2 class="bullet">⦿</h2>
+                            <h3 class="date">2025</h3>
+                            <p class="journey_text"><strong>Present:</strong> Currently working on AI integration projects and mentoring junior developers while continuing to expand my skill set.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <h3 class="know_me known_text">Want To Know More About Me?</h3>
+        <P class="know_me">Send me an email or directly message me in the contacts page, would love to hear from you :)</P>
+        <div class="details">
+            <a href="contact.html" class="message">
+                <div>Message⇗</div>
+            </a>
+            <a href="mailto:itsddieahiati@gmail.com" class="personal_life">
+                <div>Email🖂</div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_items">
+            <p>Ahiati</p>
+            <div class="socials_footer">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://linkedIn.com"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+            <a href="#" class="move_up">⇑</a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
