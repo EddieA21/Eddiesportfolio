@@ -968,13 +968,11 @@ iframe{
 
     gap: 15px;
 }
+
 @media screen and (max-width:768px){
     .journey_box{
         flex-direction: column-reverse;
     }
-    /* .journey_images{
-        align-items: ;
-    } */
 }
 
 .journeyImage_flex{
@@ -1005,6 +1003,12 @@ iframe{
     color: rgba(0, 255, 153);
     font-weight: 800;
     font-size: 2.5rem;
+}
+
+@media screen and (max-width:768px){
+    .bullet{
+        left: -3.4rem;
+    }
 }
 
 /* Animations */
