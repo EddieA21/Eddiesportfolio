@@ -12,7 +12,7 @@ html{
   --animate-delay: 4s
 }
 body {
-    background-color: #1b1b22;
+    background-color: #18181d;
     color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
@@ -407,14 +407,6 @@ body {
     opacity: 1;
 }
 
-/* .education {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    margin-bottom: 5rem;
-} */
-
 .education {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -467,16 +459,6 @@ body {
 .education_stage:hover::before {
     opacity: 1;
 }
-
-/* .education_stage {
-    border: 1px outset #3b3b3b;
-    background-color: rgb(22, 22, 29);
-    padding: 20px;
-    color: #fcfcfc;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 700px;
-} */
 
 .education_stage p {
     color: #cbd5e1;
@@ -582,20 +564,35 @@ form{
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
+.project_stack {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    font-size:x-large;
+    width: 50%;
+    display: inline;
+}
+
+.project_view{
+    display: flex;
+    justify-content:space-between;
+}
+
+.visit_link{
+    font-weight: bold;
+    color: #00ff99;
+}
+
 .project_overlay {
     position: absolute;
+    height: 45%;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(transparent, rgba(0,0,0,0.8));
     padding: 20px;
+    padding-bottom: 0.5rem;
     color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.projects_box:hover .project_overlay {
-    transform: translateY(0);
+    line-height: 1.5rem;
 }
 
 .map-container {
@@ -631,8 +628,17 @@ iframe{
 
 .projects_box img {
     width: 100%;
-    height: 80%;
+    height: 55%;
     object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+    .projects_box img{
+        height: 40%;
+    }
+    .project_overlay{
+        height: 60%;
+    }
 }
 
 .experience_container {
@@ -653,28 +659,25 @@ iframe{
     width: 100%;
 }
 
-.message, .personal_life{
+.message, .email{
     text-align: center;
     padding: 1rem;
     width: 100%;
     font-size: large;
     font-weight:500;
     text-decoration: none;
+    border-radius: 10px;
+    border: none;
     color: #fff;
 
 }
 
-.personal_life{
+.email{
     background-color: rgb(1, 185, 112);
-    border-radius: 10px;
-    border: none;
 }
 
 .message{
     background-color: #01c9c9;
-    padding: 1.22rem;
-    border-radius: 10px;
-    border: none;
 }
 
 .experience_box img {
