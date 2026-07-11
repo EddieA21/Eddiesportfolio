@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Automation Platform | Eddie Ahiati</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- Case Study Specific Styles --- */
+        .case-study-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #ffffff;
+        }
+
+        .case-study-container h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.2em;
+            color: #ffffff;
+        }
+
+        .case-study-container .subtitle {
+            font-size: 1.2rem;
+            color: #ffffff;
+            border-radius: 5px;
+            border-left: 5px solid rgba(0, 255, 153);
+            padding-left: 20px;
+            margin-bottom: 40px;
+            background: #555;
+            padding: 15px 20px;
+        }
+
+        .case-study-container h2 {
+            font-size: 1.8rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            border-bottom: 2px solid rgba(0, 255, 153);
+            padding-bottom: 10px;
+        }
+
+        .case-study-container h3 {
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .case-study-container .highlight-box {
+            background: #555;
+            border-left: 5px solid rgba(0, 255, 153);
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+
+        .case-study-container .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .case-study-container .tech-item {
+            background: #049d79;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .screenshot-placeholder {
+            background: #090c1071;
+            border: 2px dashed #adb5bd;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 30px 0;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .screenshot-placeholder img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .screenshot-placeholder .caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+        .impact-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        .impact-table th,
+        .impact-table td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .impact-table th {
+            background: #486156;
+            color: #ffffff;
+        }
+
+        .impact-table tr:nth-child(even) {
+            background: #555;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background: #049d79;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(0, 255, 153);
+        }
+
+        .architecture-diagram img{
+            border-radius: 5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .case-study-container h1 {
+                font-size: 2rem;
+            }
+            .case-study-container h2 {
+                font-size: 1.5rem;
+            }
+            .tech-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Include your portfolio's navigation/header here -->
+    <header>
+        <!-- Copy your existing header/nav code -->
+        <nav>
+            <!-- Your navigation links -->
+        </nav>
+    </header>
+
+    <div class="case-study-container">
+        <!-- Back Link -->
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+
+        <!-- Title Section -->
+        <h1>AI Support Automation Platform</h1>
+        <div class="subtitle">
+            An end-to-end AI-powered system that automates customer support workflows — from ticket triage to multi-channel response orchestration.
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="highlight-box">
+            <strong>Key Impact:</strong> Reduced manual ticket triage from <strong>5-10 minutes</strong> to <strong>under 5 seconds</strong> · 
+            90%+ AI categorization accuracy · Automated Slack alerts, Zendesk tickets, and email responses.
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: THE PROBLEM                       -->
+        <!-- ============================================ -->
+        <h2>The Problem</h2>
+        <p>
+            Support teams spend too much time on repetitive tasks. Every incoming ticket requires someone to:
+        </p>
+        <ul>
+            <li>Read the message</li>
+            <li>Figure out what category it belongs to (billing? technical? login?)</li>
+            <li>Decide how urgent it is</li>
+            <li>Write a response</li>
+            <li>Create a ticket in Zendesk</li>
+            <li>Notify the right team</li>
+        </ul>
+        <p>
+            This takes <strong>5-10 minutes per ticket</strong>, is <strong>inconsistent</strong> (different agents categorize differently), and creates <strong>bottlenecks</strong>.
+        </p>
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: THE SOLUTION                      -->
+        <!-- ============================================ -->
+        <h2>The Solution</h2>
+        <p>
+            I designed and built an AI-powered platform that automates the first <strong>80%</strong> of this workflow — allowing human agents to focus on complex, nuanced issues.
+        </p>
+
+        <h3>Architecture Overview</h3>
+        <div class="architecture-diagram">
+            <img src="images/arch.jpg" alt="architecture-diagram">
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: SCREENSHOTS (PLACEHOLDERS)        -->
+        <!-- ============================================ -->
+        <h2>Workflow in Action</h2>
+        <!-- Screenshot 1: n8n Workflow -->
+        <h3>1. n8n Automation Workflow</h3>
+        <div class="screenshot-placeholder">
+            <!-- REPLACE src WITH YOUR n8n WORKFLOW SCREENSHOT -->
+            <img src="images/n8n-workflow.png" alt="n8n workflow showing webhook, HTTP request to Spring Boot, conditional logic, Slack, and Zendesk nodes">
+            <div class="caption">Figure 1: The n8n workflow orchestrates the entire automation pipeline — from webhook trigger to Slack alerts and Zendesk ticket creation.</div>
+        </div>
+
+        <!-- Screenshot 2: AI JSON Response -->
+        <h3>2. AI Analysis (Structured JSON)</h3>
+        <div class="screenshot-placeholder">
+            <!-- REPLACE src WITH YOUR AI JSON RESPONSE SCREENSHOT -->
+            <img src="images/ai-json-response.png" alt="JSON response from DeepSeek AI showing summary, category, priority, sentiment, suggested response">
+            <img src="images/n8n-ai-response.png" alt="JSON response from DeepSeek AI showing summary, category, priority, sentiment, suggested response">
+            <div class="caption">Figure 2: DeepSeek AI returns structured JSON with summary, category, priority, sentiment, and suggested response.</div>
+        </div>
+
+        <!-- Screenshot 4: Slack Alert -->
+        <h3>3. Slack Alert (High Priority)</h3>
+        <div class="screenshot-placeholder">
+            <!-- REPLACE src WITH YOUR SLACK ALERT SCREENSHOT -->
+            <img src="images/slack-alert.png" alt="Slack notification showing high priority ticket alert">
+            <div class="caption">Figure 4: High-priority tickets trigger real-time Slack alerts to notify the team immediately.</div>
+        </div>
+
+        <!-- Screenshot 3: Zendesk Ticket -->
+        <h3>4. Zendesk Ticket with AI Analysis</h3>
+        <div class="screenshot-placeholder">
+            <!-- REPLACE src WITH YOUR ZENDESK TICKET SCREENSHOT -->
+            <img src="images/zendesk-ticket.png" alt="Zendesk ticket showing AI analysis in the ticket body">
+            <div class="caption">Figure 3: The Zendesk ticket is automatically created with the AI analysis attached for the support agent.</div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: TECHNOLOGIES                      -->
+        <!-- ============================================ -->
+        <h2>Technologies Used</h2>
+        <div class="tech-grid">
+            <div class="tech-item">Java 21</div>
+            <div class="tech-item">Spring Boot 3</div>
+            <div class="tech-item">Spring Security</div>
+            <div class="tech-item">JWT</div>
+            <div class="tech-item">DeepSeek AI</div>
+            <div class="tech-item">OpenRouter</div>
+            <div class="tech-item">n8n</div>
+            <div class="tech-item">Zendesk API</div>
+            <div class="tech-item">Slack API</div>
+            <div class="tech-item">MySQL</div>
+            <div class="tech-item">JPA/Hibernate</div>
+            <div class="tech-item">Flyway</div>
+            <div class="tech-item">Docker</div>
+            <div class="tech-item">GitHub Actions</div>
+            <div class="tech-item">Railway</div>
+            <div class="tech-item">REST APIs</div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 5: IMPACT                            -->
+        <!-- ============================================ -->
+        <h2>Measurable Impact</h2>
+        <table class="impact-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Before</th>
+                    <th>After</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ticket triage time</td>
+                    <td>5-10 minutes (manual)</td>
+                    <td><strong>&lt; 5 seconds</strong> (automated)</td>
+                </tr>
+                <tr>
+                    <td>Categorization accuracy</td>
+                    <td>Inconsistent</td>
+                    <td><strong>90%+</strong> (AI-driven)</td>
+                </tr>
+                <tr>
+                    <td>First response time</td>
+                    <td>Hours</td>
+                    <td><strong>Minutes</strong> (auto-reply + agent alert)</td>
+                </tr>
+                <tr>
+                    <td>Human error</td>
+                    <td>Common</td>
+                    <td><strong>Reduced</strong> (consistent AI analysis)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ============================================ -->
+        <!-- SECTION 6: KEY DECISIONS                     -->
+        <!-- ============================================ -->
+        <h2>Key Technical Decisions</h2>
+        <ul>
+            <li><strong>Separate AI logic from orchestration:</strong> Spring Boot handles analysis; n8n handles downstream actions. Easy to swap or update either.</li>
+            <li><strong>OpenRouter as AI gateway:</strong> Access to DeepSeek without managing multiple API keys and handles rate limits.</li>
+            <li><strong>Docker for everything:</strong> Consistent local, test, and production environments.</li>
+            <li><strong>Structured JSON from AI:</strong> Prompt engineering to force valid JSON output for easy parsing.</li>
+            <li><strong>n8n for automation:</strong> Non-developers can modify workflows; separates logic from application code.</li>
+        </ul>
+
+        <!-- ============================================ -->
+        <!-- SECTION 7: CHALLENGES & LEARNINGS            -->
+        <!-- ============================================ -->
+        <h2>Challenges & Learnings</h2>
+        <ul>
+            <li><strong>AI isn't perfect:</strong> I added fallback parsing and error handling when the AI returned invalid JSON or plain text.</li>
+            <li><strong>Container networking:</strong> I had to use <code>host.docker.internal</code> to connect n8n (in Docker) to my Spring Boot API.</li>
+            <li><strong>Authentication:</strong> I added JWT tokens and environment variables for secure service-to-service communication.</li>
+            <li><strong>Rate limiting:</strong> I added exponential backoff and switched to OpenRouter to handle API rate limits.</li>
+            <li><strong>Documentation matters:</strong> I tracked all technical decisions and architecture choices in my GitHub repo and portfolio.</li>
+        </ul>
+
+        <!-- ============================================ -->
+        <!-- SECTION 8: LIVE DEMO                         -->
+        <!-- ============================================ -->
+        <h2>Live Demo</h2>
+        <div class="highlight-box">
+            <p><strong>📂 GitHub Repository:</strong> 
+                <a href="https://github.com/EddieA21/E-commerce-store" target="_blank">
+                    https://github.com/eddiea21/ai-support-automation
+                </a>
+            </p>
+            <p><em>(Note: The n8n workflow is currently running locally. Contact me for a live demonstration.)</em></p>
+        </div>
+
+        <!-- Back Link -->
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+    </div>
+
+    <!-- Include your portfolio's footer here -->
+    <footer>
+        <!-- Your existing footer code -->
+    </footer>
+</body>
+</html>
